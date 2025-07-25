@@ -65,8 +65,109 @@ font-weight: bold;
 
 
 
+/*our plant section*/
 
 
+    .our-plants {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-top: 80px;
+    }
+
+    .plant-title {
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .plant-text {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #979595;
+    }
+
+    .plant-card {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 5px;
+      padding: 10px;
+    }
+
+    .card {
+      background-color: #fff;
+      text-align: center;
+      padding: 10px;
+    
+    }
+
+    .card-img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      
+    }
+
+    .plant-heading {
+      font-size: 1.1rem;
+      margin: 8px 0 4px;
+    }
+
+    .plant-price {
+      
+      font-weight: bold;
+      margin: 4px 0 8px;
+    }
+
+    .plant-btn {
+      padding: 8px;
+      width: 150px;
+      background-color: #e95a08;
+      color: white;
+      border: none;
+      
+      
+    }
+
+    /*flower-plants*/
+    .flower-plants{
+      margin-top: 100px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      
+    }
+
+    .image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.main-image {
+  width: 300px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.badge-image {
+  position: absolute;
+  top: -55px;       
+  left: 212px;      
+  width: 150px;
+  z-index: 10;    
+}
+
+.lover-heading{
+
+  margin-left: 20px;
+
+}
+
+
+
+    
  /* media query */
 
   @media screen and (max-width: 576px) {
@@ -95,16 +196,43 @@ font-weight: bold;
     font-size: 2rem;
     word-wrap: break-word;
   }
-
-  .text-size {
-    font-size: 16px;
-  
-  }
-
   .banner-content, .banner-img {
     width: 100%;
     padding: 5px;
   }
+
+  .our-plants{
+    overflow: hidden;
+  }
+  .plant-card {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 5px;
+
+    }
+    .plant-text{
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+    .plant-img{
+       max-width: 100%;
+    height: auto;
+    display: block;
+    }
+
+    .flower-plants{
+      flex-direction: column;
+    }
+    .badge-image{
+      display: none;
+    }
+    .main-image{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
 }
 
 
